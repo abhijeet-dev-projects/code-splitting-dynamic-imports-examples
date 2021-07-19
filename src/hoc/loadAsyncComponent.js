@@ -13,11 +13,12 @@ export const loadAsyncComponent = (promise, props) => {
         }
 
         async componentDidMount() {
-            console.log('spiderman')
-            const { About } = await promise;
+            //const { About } = await promise;
+            const component = await promise;
+            //  console.log(obj, 'spiderman')
 
             this.setState({
-                AsyncComponent: About
+                AsyncComponent: component.default
             });
         }
 

@@ -7,6 +7,7 @@ const Header = () => {
         <div style={{display:'flex', flexDirection:'column'}}>
             <Link to='/'>Home</Link>
             <Link to='/about'>About</Link>
+            <Link to='/posts'>Posts</Link>
         </div>
     );
 }
